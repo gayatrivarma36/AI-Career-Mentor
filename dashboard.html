@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | AI Career Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <i class="fas fa-robot"></i>
+          <span>AI Career Mentor</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a class="active" href="#"><i class="fas fa-th-large"></i> Overview</a>
+          <a href="#"><i class="fas fa-user"></i> Profile</a>
+          <a href="#"><i class="fas fa-book"></i> Courses</a>
+          <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+          <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h1>Welcome back, Gayatri</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-btn"><i class="fas fa-bell"></i></button>
+            <div class="profile-pill">
+              <div class="avatar">G</div>
+              <span>Gayatri Indhukuri</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero-card glass-card">
+          <div>
+            <p class="eyebrow">AI Career Coach</p>
+            <h2>Your next career step is ready.</h2>
+            <p>Continue your growth plan with focused recommendations and smart progress tracking.</p>
+          </div>
+          <button class="btn-primary"><i class="fas fa-arrow-right"></i> Continue Plan</button>
+        </section>
+
+        <section class="stats-grid">
+          <article class="glass-card stat-card">
+            <i class="fas fa-file-alt"></i>
+            <div>
+              <h3>Resume Score</h3>
+              <p>87/100</p>
+            </div>
+          </article>
+          <article class="glass-card stat-card">
+            <i class="fas fa-brain"></i>
+            <div>
+              <h3>Skills</h3>
+              <p>12 Strengths</p>
+            </div>
+          </article>
+          <article class="glass-card stat-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h3>Courses</h3>
+              <p>4 Enrolled</p>
+            </div>
+          </article>
+          <article class="glass-card stat-card">
+            <i class="fas fa-comments"></i>
+            <div>
+              <h3>Interviews</h3>
+              <p>3 Ready</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <h3>Recent Activity</h3>
+              <a href="#">View all</a>
+            </div>
+            <ul class="activity-list">
+              <li><i class="fas fa-check-circle"></i> Completed AI Resume Review</li>
+              <li><i class="fas fa-check-circle"></i> Finished Product Design Module</li>
+              <li><i class="fas fa-clock"></i> Scheduled mock interview for Friday</li>
+            </ul>
+          </div>
+
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <h3>AI Career Suggestions</h3>
+              <a href="#">Explore</a>
+            </div>
+            <ul class="suggestions-list">
+              <li>Focus on leadership storytelling</li>
+              <li>Strengthen UX research portfolio</li>
+              <li>Target product manager pathways</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content-grid lower-grid">
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <h3>Learning Progress</h3>
+              <a href="#">Update</a>
+            </div>
+            <div class="progress-item">
+              <span>Prompt Engineering</span>
+              <div class="bar"><div style="width: 78%"></div></div>
+            </div>
+            <div class="progress-item">
+              <span>Interview Prep</span>
+              <div class="bar"><div style="width: 63%"></div></div>
+            </div>
+          </div>
+
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <h3>Upcoming Tasks</h3>
+              <a href="#">See calendar</a>
+            </div>
+            <ul class="task-list">
+              <li><span>09:00</span> Review portfolio feedback</li>
+              <li><span>14:00</span> Practice behavioral answers</li>
+              <li><span>18:30</span> Watch leadership lesson</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
