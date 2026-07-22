@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Analyzer | AI Career Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/resume.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Resume Analyzer</p>
+          <h1>Optimize your resume with AI insight</h1>
+        </div>
+        <a class="btn-outline" href="dashboard.html">Back to Dashboard</a>
+      </header>
+
+      <section class="upload-card glass-card">
+        <div class="upload-area" id="drop-zone">
+          <i class="fas fa-cloud-arrow-up"></i>
+          <h2>Drag & Drop your resume</h2>
+          <p>Upload PDF or DOCX files to start analysis.</p>
+          <label class="btn-primary" for="resume-file">Upload Resume</label>
+          <input type="file" id="resume-file" accept=".pdf,.doc,.docx" hidden />
+        </div>
+      </section>
+
+      <section class="analytics-grid">
+        <article class="glass-card panel preview-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-file-alt"></i> Resume Preview</h3>
+          </div>
+          <div class="preview-box">
+            <p>No resume uploaded yet.</p>
+          </div>
+        </article>
+
+        <article class="glass-card panel score-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-chart-line"></i> Resume Score</h3>
+          </div>
+          <div class="score-circle">84</div>
+          <p class="score-caption">Strong alignment with your target role.</p>
+        </article>
+      </section>
+
+      <section class="analytics-grid lower-grid">
+        <article class="glass-card panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-brain"></i> Skills Detected</h3>
+          </div>
+          <div class="tag-list">
+            <span>Leadership</span>
+            <span>Product Strategy</span>
+            <span>Data Analysis</span>
+            <span>Communication</span>
+          </div>
+        </article>
+
+        <article class="glass-card panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-wand-magic-sparkles"></i> Missing Skills</h3>
+          </div>
+          <div class="tag-list missing">
+            <span>React</span>
+            <span>SQL</span>
+            <span>Go-to-Market Strategy</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="analytics-grid lower-grid">
+        <article class="glass-card panel suggestion-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-lightbulb"></i> AI Suggestions</h3>
+          </div>
+          <ul class="list">
+            <li>Add measurable impact statements to your experience section.</li>
+            <li>Highlight leadership projects with more action verbs.</li>
+            <li>Include one additional technical certification to improve credibility.</li>
+          </ul>
+        </article>
+
+        <article class="glass-card panel ats-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-shield-alt"></i> ATS Compatibility</h3>
+          </div>
+          <div class="ats-score">92%</div>
+          <p>Your resume is highly compatible with modern applicant tracking systems.</p>
+        </article>
+      </section>
+    </div>
+
+    <script src="js/resume.js"></script>
+  </body>
+</html>

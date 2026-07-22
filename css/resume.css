@@ -1,0 +1,232 @@
+/* Premium resume analyzer styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #071120 0%, #132a4e 45%, #24104c 100%);
+  color: #f8fafc;
+}
+
+.page-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem 3rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #8b5cf6;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.page-header h1 {
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+}
+
+.btn-outline,
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.btn-outline {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-outline:hover,
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(2, 8, 23, 0.22);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 18px 45px rgba(2, 8, 23, 0.22);
+}
+
+.upload-card,
+.panel {
+  border-radius: 1.25rem;
+}
+
+.upload-card {
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.upload-area {
+  border: 2px dashed rgba(255, 255, 255, 0.24);
+  border-radius: 1.2rem;
+  padding: 2.2rem 1rem;
+  text-align: center;
+  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+}
+
+.upload-area.dragover {
+  border-color: #8b5cf6;
+  transform: translateY(-3px);
+  background: rgba(124, 58, 237, 0.16);
+}
+
+.upload-area i {
+  font-size: 2.1rem;
+  color: #93c5fd;
+  margin-bottom: 0.7rem;
+}
+
+.upload-area h2 {
+  margin-bottom: 0.4rem;
+}
+
+.upload-area p {
+  color: #dbeafe;
+  margin-bottom: 1rem;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.panel {
+  padding: 1.1rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.panel:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.panel-header i {
+  color: #93c5fd;
+}
+
+.preview-box {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #dbeafe;
+  padding: 1rem;
+  text-align: center;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.7rem;
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+}
+
+.score-caption,
+.ats-panel p {
+  text-align: center;
+  color: #dbeafe;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tag-list span {
+  padding: 0.55rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+}
+
+.tag-list.missing span {
+  background: rgba(124, 58, 237, 0.2);
+  color: #e9d5ff;
+}
+
+.list {
+  display: grid;
+  gap: 0.7rem;
+  color: #dbeafe;
+  padding-left: 1rem;
+}
+
+.ats-score {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-shell {
+    padding: 1rem 1rem 2rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+
+  .upload-card,
+  .panel {
+    padding: 1rem;
+  }
+}
