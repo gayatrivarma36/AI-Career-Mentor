@@ -573,3 +573,28 @@ textarea:focus {
     padding: 1.3rem;
   }
 }
+/* Login Link */
+.site-nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.site-nav ul li a:hover{
+    color:#7c5cff;
+}
+
+/* Sign Up Button */
+.signup-btn{
+    background:#7c5cff;
+    color:white !important;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.signup-btn:hover{
+    background:#5b3dff;
+}

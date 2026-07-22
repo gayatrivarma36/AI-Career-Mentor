@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | AI Career Mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="auth-brand">
+          <i class="fas fa-robot"></i>
+          <h1>AI Career Mentor</h1>
+        </div>
+
+        <h2>Welcome Back</h2>
+        <p class="auth-subtitle">Log in to continue your career journey.</p>
+
+        <form class="auth-form">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div class="input-with-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <div class="input-with-icon">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Enter your password" required />
+            </div>
+          </div>
+
+          <div class="auth-options">
+            <label class="checkbox-wrap">
+              <input type="checkbox" />
+              <span>Remember Me</span>
+            </label>
+            <a href="#" class="link-text">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-sign-in-alt"></i> Login
+          </button>
+
+          <button type="button" class="btn-google">
+            <i class="fab fa-google"></i> Continue with Google
+          </button>
+        </form>
+
+        <p class="auth-footer">
+          Don’t have an account?
+          <a href="signup.html" class="link-text">Create one</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>
