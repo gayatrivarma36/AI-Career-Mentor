@@ -8,7 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetSection = document.querySelector(targetId);
       if (targetSection) {
         event.preventDefault();
-        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        const headerOffset = 90;
+        const elementPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
       }
     });
   });
