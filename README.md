@@ -28,18 +28,25 @@ This project combines:
 
 ## How to Run
 
-1. Open the backend folder
-2. Activate the virtual environment
-3. Run the Flask server:
+1. Install dependencies:
 
 ```powershell
 cd backend
-.\venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+2. Start the server:
+
+```powershell
+cd backend
 python main.py
 ```
 
-4. Open the app in your browser:
+3. Open the app in your browser:
    - http://127.0.0.1:5000/
+
+4. If you want a one-click launcher, double-click the file:
+   - start_app.bat
 
 ## Technologies Used
 

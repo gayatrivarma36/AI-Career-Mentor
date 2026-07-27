@@ -28,42 +28,60 @@ def generate_local_response(prompt):
 
     if 'roadmap' in lower_prompt or 'skills analysis' in lower_prompt:
         return (
-            "Fallback roadmap guidance:\n"
-            "- Build core fundamentals first.\n"
-            "- Practice one portfolio project every 2 weeks.\n"
-            "- Learn one new tool each month and document your progress."
+            "Roadmap Overview\n"
+            "================\n"
+            "\n"
+            "Phase 1: Build Foundations\n"
+            "- Strengthen core fundamentals in your target domain.\n"
+            "- Practice concepts daily through small coding or case-study exercises.\n"
+            "\n"
+            "Phase 2: Create Portfolio Projects\n"
+            "- Build one polished project every 2 weeks.\n"
+            "- Document your process, results, and impact clearly.\n"
+            "\n"
+            "Phase 3: Grow and Track Progress\n"
+            "- Learn one relevant tool or technology each month.\n"
+            "- Review your progress regularly and refine your plan."
         )
 
-    if 'missing skills' in lower_prompt or 'target role' in lower_prompt:
+    if 'missing skills' in lower_prompt or 'skills gap' in lower_prompt or 'target role' in lower_prompt and 'resume' not in lower_prompt:
         return (
-            "Fallback skill-gap analysis:\n"
-            "- Strengthen core concepts for the target role.\n"
-            "- Practice hands-on projects and GitHub portfolio work.\n"
-            "- Learn the most common tools used in that domain."
+            "Skill Gap Analysis\n"
+            "=================\n"
+            "\n"
+            "- Strengthen the core skills most relevant to the target role.\n"
+            "- Practice hands-on projects and build visible portfolio work.\n"
+            "- Learn the most common tools and frameworks used in that domain."
         )
 
     if 'interview' in lower_prompt or 'hr questions' in lower_prompt:
         return (
-            "Fallback interview prep:\n"
-            "- HR: Tell me about yourself.\n"
-            "- Technical: Explain your project architecture clearly.\n"
-            "- Coding: Write a simple function and explain your approach."
+            "Interview Preparation\n"
+            "====================\n"
+            "\n"
+            "- HR: Tell me about yourself and your biggest strengths.\n"
+            "- Technical: Explain your project architecture and key decisions clearly.\n"
+            "- Coding: Solve a simple problem and explain your thinking step by step."
         )
 
     if 'resume' in lower_prompt or 'ats' in lower_prompt:
         return (
-            "Fallback resume feedback:\n"
-            "- Add measurable achievements.\n"
-            "- Match keywords to the target role.\n"
-            "- Improve formatting for ATS readability."
+            "Resume Feedback\n"
+            "===============\n"
+            "\n"
+            "- Add measurable achievements and business impact.\n"
+            "- Match important keywords to the target role.\n"
+            "- Improve formatting and structure for ATS readability."
         )
 
     if 'course' in lower_prompt or 'youtube' in lower_prompt:
         return (
-            "Fallback course recommendations:\n"
-            "- Free course: CS50 or Google Digital Skills.\n"
-            "- YouTube: freeCodeCamp or Programming with Mosh.\n"
-            "- Certification: Google or Microsoft beginner tracks."
+            "Course Recommendations\n"
+            "=====================\n"
+            "\n"
+            "- Free course: CS50, Google Digital Skills, or Microsoft Learn.\n"
+            "- YouTube: freeCodeCamp, Programming with Mosh, or The Net Ninja.\n"
+            "- Certification: Google, Microsoft, or AWS beginner tracks."
         )
 
     return (
